@@ -1,0 +1,11 @@
+<h1>Users#show</h1>
+<p>Find me in app/views/users/show.html.erb</p>
+
+
+    # kafka.each_message(topic: "my-topic") do |message|
+    #   puts message.offset, message.key, message.value
+
+
+<% @messages.each do |message| %>
+  <%= message.offset, message.key, message.value %></br>
+<% end %>
